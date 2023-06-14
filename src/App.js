@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+class App extends React.Component {
+  constructor()
+  {
+    super();
+    console.warn("constructor")
+    this.state={
+      count:0
+    }
+  }
+  componentDidUpdate(preProps , preState , snapshot)
+  {
+    // console.warn("componentDidUpdate", preState.count, this.state.count)
+    console.warn("componentDidUpdate",snapshot)
+    if (preState.count === this.state.count)
+    {
+      console.log("Data is already same")
+    }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  }
+  render()
+  {
+    console.warn("render")
+
+    return (
+      <div className="App">
+        <h1>Component Did Update {this.state.count}</h1>
+        <button  type="button" className="btn btn-danger" onClick={()=>{this.setState({count: this.state.count })}}>Update</button>
+      </div>
+    );
+  }
 }
 
 export default App;
