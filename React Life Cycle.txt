@@ -77,4 +77,8 @@ API Call
 2) Post API Call
 => When you want to store data to the database. Then use this method.
 
+What is an API?
+ 1) API is a tool for sharing data in applications
+ 2) Share data between platforms
+ 3) Share data from between programming language.
      
