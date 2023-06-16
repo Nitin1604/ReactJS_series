@@ -69,3 +69,12 @@ class App extends React.Component {
 
 export default App;
 _________________________________________________________________________________________________________________________________
+API Call
+1) Get API Call 
+=> When you want to show the data from database to your react app. Then use this 
+   method.
+
+2) Post API Call
+=> When you want to store data to the database. Then use this method.
+
+     
