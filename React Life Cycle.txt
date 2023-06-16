@@ -94,3 +94,8 @@ More About API
 => By JSON 
 => Because json is supported by all programming language.
      
+Security
+
+=> At login time every device have a token or security code.
+=> And with every API request device send this token.
+=> And backend check this token and return data.
