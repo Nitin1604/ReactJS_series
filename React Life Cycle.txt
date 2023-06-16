@@ -87,4 +87,10 @@ Issues without API
 => How to send the same data in all devices?
 => If we fetch data for all device from database it take more time and effort.
 => We need a common thing to share data.
+
+More About API
+=> Application Programming Interface.
+=>Can share the data between different language
+=> By JSON 
+=> Because json is supported by all programming language.
      
