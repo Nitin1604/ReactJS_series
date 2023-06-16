@@ -81,4 +81,10 @@ What is an API?
  1) API is a tool for sharing data in applications
  2) Share data between platforms
  3) Share data from between programming language.
+_________________________________________________________________________________________________________________________________
+
+Issues without API
+=> How to send the same data in all devices?
+=> If we fetch data for all device from database it take more time and effort.
+=> We need a common thing to share data.
      
