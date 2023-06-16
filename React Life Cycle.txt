@@ -69,6 +69,46 @@ class App extends React.Component {
 
 export default App;
 _________________________________________________________________________________________________________________________________
+User.js code ---> this is in src folder 
+
+import React,{forwardRef} from 'react'
+function User(props,ref)
+{
+    return(
+        <div>
+            <input ref={ref} type="text" />
+        </div>
+    )
+}
+
+export default forwardRef(User);
+_________________________________________________________________________________________________________________________________
+forwardRef code in App.js 
+
+import './App.css';
+import React ,{useRef} from 'react'
+import User from './User'
+function App() {
+  let inputRef=useRef(null)
+  function updateInput()
+  {
+    inputRef.current.value="react js series";
+    inputRef.current.style.color="red"
+    inputRef.current.focus()
+   
+
+  }
+  return (
+    <div className="App">
+      <h1>forwardRef in React </h1>
+      <User ref={inputRef} />
+      <button  type="button" className="btn btn-danger my-3" onClick={updateInput} >Update Input Box</button>
+    </div>
+  );
+
+}
+export default App;
+_________________________________________________________________________________________________________________________________
 API Call
 1) Get API Call 
 => When you want to show the data from database to your react app. Then use this 
